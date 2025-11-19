@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+}
+
+.clock-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+
+#clock {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 20px;
+  letter-spacing: 5px;
+}
+
+.colon {
+  animation: blink 1s infinite;
+}
+
+/* Blinking colon effect */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
